@@ -1,0 +1,128 @@
+/* Container Styles */
+.landing-section {
+  background-color: #fff;
+}
+.landing-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navbar {
+  background-color: #dfcdc3;
+}
+/* Logo and Title Styles */
+.landing-section .header_logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.landing-section .header_logo {
+  width: 50px;
+  height: auto;
+}
+
+.landing-section .header_title {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* Navigation Styles */
+.landing-section .header_nav {
+  margin-top: 10px;
+}
+
+.landing-section .header_nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-section .header_nav-item {
+  margin-left: 20px;
+  position: relative; /* For dropdown positioning */
+}
+
+.landing-section .header_nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Align icons with text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.landing-section .header_nav-link:hover {
+  background-color: #eee9e9;
+  color: #0a0a0a;
+}
+
+/* Dropdown Styles */
+.landing-section.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.landing-section .dropdown-item {
+  color: #0a0a0a;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Align icons with text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.landing-section .dropdown-item:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.landing-section .header_nav-item:hover .landing-section .dropdown-content {
+  display: block;
+}
+
+/* Icon Styles */
+.landing-section .header_nav-icon {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.landing-section .header_nav-link:hover .header_nav-icon {
+  color: #0a0a0a;
+}
+
+/* Profile Picture Styles */
+.landing-section .profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.landing-section .profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.landing-section .profile-container:hover .landing-section .profile-picture {
+  border-color: #007bff;
+}
